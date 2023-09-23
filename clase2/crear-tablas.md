@@ -17,8 +17,8 @@
 
     CREATE TABLE productos_apple  
     (  
-        id  tipo características,  
-        nombre tipo características,  
-        precio tipo características,  
-        stock tipo características  
+        id tinyint unsigned auto_increment primary key not null,  
+        nombre varchar(100) unique not null,  
+        precio decimal(10,2) unsigned not null,  
+        stock tinyint unsigned not null  
     );  
